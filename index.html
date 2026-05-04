@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DKP Calculator</title>
+    <link rel="stylesheet" href="./style/icc.css">
+    <link rel="icon" type="image/png" href="./assets/icon/ChatGPT Image 3 de mai. de 2026, 19_55_42.png">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <nav>
+            <a href="index.html" class="active">ICC</a>
+            <a href="./page/ruby.html" class="ruby-hover">RS</a>
+            <a href="./page/toc.html" class="toc-hover">TOC</a>
+        </nav>
+    </header>
+
+    <section class="raid-header">
+        <div class="raid-title-row">
+            <h1>Icecrown Citadel</h1>
+
+            <div class="raid-size-buttons">
+                <button onclick="setRaidSize(10, this)">10</button>
+                <button class="active" onclick="setRaidSize(25, this)">25</button>
+            </div>
+        </div>
+
+        <div class="total-box">
+            Total DKP: <span id="total">0</span>
+            <button onclick="resetTotal()">Resetar</button>
+        </div>
+    </section>
+
+    <main id="bossContainer"></main>
+
+    <footer class="footer">
+        <p>© Copyright 2026 - joseprandj - Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="configModal" class="modal hidden">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <h2>⚙️ Configurações</h2>
+                    <button class="clear-btn" onclick="clearConfig()">Limpar Configurações</button>
+                </div>
+
+                <button class="close-btn" onclick="closeConfig()">✕</button>
+            </div>
+
+            <div id="configList"></div>
+
+        </div>
+    </div>
+    
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
