@@ -422,13 +422,24 @@ function getStoredConfigBySize(type, size) {
 }
 
 function getPageType() {
-    const file = window.location.pathname
-        .split("/")
-        .pop()
-        .replace(".html", "")
-        .toLowerCase();
+    let path = window.location.pathname.toLowerCase();
 
-    return file === "index" ? "icc" : file;
+    // remove barra final
+    if (path.endsWith("/")) {
+        path = path.slice(0, -1);
+    }
+
+    const file = path.split("/").pop();
+
+    // homepage (GitHub Pages)
+    if (!file || file === "" || file === "index.html") {
+        return "icc";
+    }
+
+    if (file.includes("ruby")) return "ruby";
+    if (file.includes("toc")) return "toc";
+
+    return "icc";
 }
 
 
