@@ -73,7 +73,7 @@ const defaultConfigs = {
             "ruby-0": { normal: 0, heroic: 0, bonus: 0 },
             "ruby-1": { normal: 0, heroic: 0, bonus: 0 },
             "ruby-2": { normal: 0, heroic: 0, bonus: 0 },
-            "ruby-3": { normal: 40, heroic: 200, bonus: 0 }
+            "ruby-3": { normal: 100, heroic: 400, bonus: 0 }
         }
     },
     toc: {
@@ -82,14 +82,14 @@ const defaultConfigs = {
             "toc-1": { normal: 0, heroic: 0, bonus: 0 },
             "toc-2": { normal: 0, heroic: 0, bonus: 0 },
             "toc-3": { normal: 0, heroic: 0, bonus: 0 },
-            "toc-4": { normal: 0, heroic: 30, bonus: 0 }
+            "toc-4": { normal: 0, heroic: 50, bonus: 0 }
         },
         25: {
-            "toc-0": { normal: 10, heroic: 20, bonus: 0 },
-            "toc-1": { normal: 10, heroic: 20, bonus: 0 },
-            "toc-2": { normal: 10, heroic: 20, bonus: 0 },
-            "toc-3": { normal: 10,heroic: 20, bonus: 0 },
-            "toc-4": { normal: 10, heroic: 20, bonus: 0 }
+            "toc-0": { normal: 10, heroic: 40, bonus: 0 },
+            "toc-1": { normal: 10, heroic: 40, bonus: 0 },
+            "toc-2": { normal: 10, heroic: 40, bonus: 0 },
+            "toc-3": { normal: 10, heroic: 40, bonus: 0 },
+            "toc-4": { normal: 10, heroic: 40, bonus: 0 }
         }
     }
 };
@@ -441,7 +441,6 @@ function getPageType() {
 
     return "icc";
 }
-
 
 document.getElementById("configModal").addEventListener("click", function(e) {
     if (e.target.id === "configModal") {
