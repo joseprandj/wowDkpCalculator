@@ -1,7 +1,9 @@
 # 🧮 DKP Calculator (WoW Raids)
 
 Aplicação web simples para cálculo de DKP baseada em raids do World of Warcraft, com suporte a múltiplas instâncias, modos (10/25) e configuração dinâmica de valores.
-- https://joseprandj.github.io/wowDkpCalculator/
+<a href="https://joseprandj.github.io/wowDkpCalculator/" target="_blank" rel="noopener noreferrer">
+  - 🎯 Acesse o WoW DKP Calculator
+</a>
 ---
 
 ## 🚀 Funcionalidades
