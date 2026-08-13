@@ -466,3 +466,15 @@ window.addEventListener("DOMContentLoaded", () => {
     loadBosses(type);
 });
 
+function clearCache() {
+    const confirmacao = confirm("Isso irá limpar os dados salvos pelo sistema em todas as páginas. Deseja continuar?");
+
+    if (!confirmacao) return;
+
+    localStorage.clear();
+    sessionStorage.clear();
+
+    alert("Cache limpo com sucesso!");
+
+    window.location.reload();
+}
