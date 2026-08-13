@@ -67,7 +67,7 @@ const defaultConfigs = {
             "ruby-0": { normal: 0, heroic: 0, bonus: 0 },
             "ruby-1": { normal: 0, heroic: 0, bonus: 0 },
             "ruby-2": { normal: 0, heroic: 0, bonus: 0 },
-            "ruby-3": { normal: 0, heroic: 20, bonus: 0 }
+            "ruby-3": { normal: 0, heroic: 200, bonus: 0 }
         },
         25: {
             "ruby-0": { normal: 0, heroic: 0, bonus: 0 },
